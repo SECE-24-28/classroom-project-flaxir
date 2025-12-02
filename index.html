@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathan Prasath - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="performance.html" class="nav-link">Performance</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="home-main">
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm Mathan Prasath
+                    </h1>
+                    <p class="hero-subtitle">B.Tech AI & Data Science Student</p>
+                    <p class="hero-description">
+                        Passionate about building accessible, user-focused web applications 
+                        and exploring AI/ML workflows. Currently mastering full-stack development 
+                        and algorithmic problem-solving.
+                    </p>
+                    
+                    <div class="hero-skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">AI/ML</span>
+                        <span class="skill-tag">DSA</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i class="fas fa-code"></i> View Projects
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mathan-prasath-mp-1866a0333" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mathanprasath.s2024aids@sece.ac.in" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">MP</div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Mathan Prasath S</h3>
+                            <p>AI & Data Science</p>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                Available for opportunities
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="quick-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Achievements</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-count="250">0</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Integration -->
+    <div id="chatbot-container">
+        <div id="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div id="chatbot-widget" style="display: none;">
+            <div id="chatbot-header">
+                <span>Chat with Mathan</span>
+                <button id="chatbot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chatbot-content">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Type your message..." />
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotWidget = document.getElementById('chatbot-widget');
+            const chatbotClose = document.getElementById('chatbot-close');
+            const chatInput = document.getElementById('chat-input');
+            const sendBtn = document.getElementById('send-btn');
+            const chatMessages = document.getElementById('chat-messages');
+            
+            chatbotToggle.addEventListener('click', () => {
+                chatbotWidget.style.display = chatbotWidget.style.display === 'none' ? 'block' : 'none';
+                if (chatbotWidget.style.display === 'block' && chatMessages.children.length === 0) {
+                    addMessage('Hi! Ask me about Mathan\'s projects, skills, or experience!', 'bot');
+                }
+            });
+            
+            chatbotClose.addEventListener('click', () => {
+                chatbotWidget.style.display = 'none';
+            });
+            
+            function addMessage(text, sender) {
+                const message = document.createElement('div');
+                message.className = `message ${sender}-message`;
+                message.textContent = text;
+                chatMessages.appendChild(message);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function sendMessage() {
+                const text = chatInput.value.trim();
+                if (!text) return;
+                
+                addMessage(text, 'user');
+                chatInput.value = '';
+                
+                setTimeout(() => {
+                    const responses = {
+                        'hello': 'Hello! How can I help you learn more about Mathan?',
+                        'projects': 'Mathan has worked on LINKLIFE (healthcare platform), voice-enabled blogging, and interactive web applications.',
+                        'skills': 'Mathan is skilled in JavaScript, HTML/CSS, Python, C/C++, and AI/ML concepts. He\'s solved 250+ coding problems!',
+                        'contact': 'You can reach Mathan at mathanprasath.s2024aids@sece.ac.in or connect on LinkedIn!',
+                        'achievements': 'Mathan won Createathon 2K25 and was a top 5 finalist in Freshathon out of 100+ teams!'
+                    };
+                    
+                    const lowerText = text.toLowerCase();
+                    let response = 'I can help you learn about Mathan\'s projects, skills, achievements, or contact info. What would you like to know?';
+                    
+                    for (const [key, value] of Object.entries(responses)) {
+                        if (lowerText.includes(key)) {
+                            response = value;
+                            break;
+                        }
+                    }
+                    
+                    addMessage(response, 'bot');
+                }, 1000);
+            }
+            
+            sendBtn.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendMessage();
+            });
+        });
+    </script>
+</body>
+</html>

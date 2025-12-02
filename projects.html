@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mathan Prasath</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="performance.html" class="nav-link">Performance</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">Showcasing innovative solutions and technical expertise</p>
+            </div>
+
+            <div class="projects-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-btn" data-filter="accessibility">Accessibility</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card featured" data-category="web healthcare">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>LINKLIFE - Healthcare Management</h3>
+                            <div class="project-status featured-badge">
+                                <i class="fas fa-star"></i>
+                                Featured
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive blood donation platform that connects donors with recipients 
+                            using location-based matching and real-time notifications. Built with focus 
+                            on user experience and accessibility.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location-based matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bell"></i>
+                                <span>Real-time notifications</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive design</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2024</span>
+                            <span class="project-type">Healthcare Platform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web accessibility">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Voice-Enabled Blogging Platform</h3>
+                            <div class="project-status new-badge">
+                                <i class="fas fa-clock"></i>
+                                Latest
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            An innovative blogging website featuring voice comments and voice navigation 
+                            to enhance accessibility. Includes dynamic pages and social media integration.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-microphone"></i>
+                                <span>Voice comments</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-volume-up"></i>
+                                <span>Voice navigation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-share-alt"></i>
+                                <span>Social integration</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web Speech API</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Accessibility Focus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Interactive Portfolio Website</h3>
+                            <div class="project-status">
+                                <i class="fas fa-code"></i>
+                                Current
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A modern, interactive portfolio website showcasing projects, skills, and 
+                            achievements with smooth animations and responsive design.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-magic"></i>
+                                <span>Smooth animations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-palette"></i>
+                                <span>Modern UI/UX</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Fast loading</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Advanced Calculator App</h3>
+                        </div>
+                        <p class="project-description">
+                            A feature-rich calculator application with scientific functions, 
+                            history tracking, and keyboard support.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-history"></i>
+                                <span>Calculation history</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-keyboard"></i>
+                                <span>Keyboard support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-function"></i>
+                                <span>Scientific functions</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2024</span>
+                            <span class="project-type">Utility App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Interactive Web Games</h3>
+                        </div>
+                        <p class="project-description">
+                            Collection of interactive web games including puzzle games, 
+                            memory games, and educational quizzes.
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Score tracking</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Multiplayer support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Educational content</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas API</span>
+                            <span class="tech-tag">CSS Animations</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-year">2024</span>
+                            <span class="project-type">Entertainment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-stats">
+                <h2>Project Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Completed Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Technologies Used</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Hours Coded</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Featured Projects</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technologies-section">
+                <h2>Technologies & Tools</h2>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">HTML5</span>
+                            <span class="tech-item">CSS3</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Programming</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">C/C++</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Data Structures</span>
+                            <span class="tech-item">Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Tools</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">VS Code</span>
+                            <span class="tech-item">Git/GitHub</span>
+                            <span class="tech-item">Canva</span>
+                            <span class="tech-item">Blender</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Project filtering functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                const projects = document.querySelectorAll('.project-card');
+                
+                projects.forEach(project => {
+                    if (filter === 'all' || project.dataset.category.includes(filter)) {
+                        project.style.display = 'block';
+                        project.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
